@@ -1,14 +1,18 @@
 import './App.css';
 import Header from './Components/Header';
 import NavBar from './Components/NavBar';
+import ExamData from './Components/ExamData';
+
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-       <Header/>
-       
-      </header>
+      <Header className="App-header"/>
+      <Routes>
+        <Route path='/' element={<ExamData />}/>
+      </Routes>
       <NavBar/>
     </div>
   );
