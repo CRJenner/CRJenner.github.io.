@@ -10,10 +10,11 @@ function App() {
   return (
     <div className="App">
       <Header className="App-header"/>
+      <NavBar/>
       <Routes>
         <Route path='/' element={<ExamData />}/>
       </Routes>
-      <NavBar/>
+      
     </div>
   );
 }

@@ -15,6 +15,7 @@ function ExamData () {
 
     return (
     <div className="exam_data_container">
+       <h4>Click for more details:</h4>
         <div className="exam-list">
             
             {examData.map((data) => {
