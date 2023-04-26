@@ -19,7 +19,6 @@ function ExamData () {
       if (locationFilter && data.locationname !== locationFilter) {
         return false;
       }
-      console.log(new Date(data.date).toLocaleString("en-Uk"))
       if (dateFilter && new Date(data.date).toLocaleString("en-Uk") !== dateFilter) {
         return false;
       }
@@ -28,6 +27,22 @@ function ExamData () {
       }
       return true;
     });
+    
+
+    if(filteredData.length===0){
+        return (<div>
+            <NavBar
+          onLocationChange={setLocationFilter}
+          onDateChange={setDateFilter}
+          onCandidateChange={setCandidateFilter}
+        />
+            <h4 className="empty_filter">no exams set with these filters: </h4>
+                <ul>{locationFilter }</ul>
+                <ul>{candidateFilter}</ul>
+                <ul>{dateFilter}</ul>
+        </div>)
+        
+    }
   
     return (
       <div className="exam_data_container">

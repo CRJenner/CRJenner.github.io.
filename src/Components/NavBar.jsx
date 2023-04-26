@@ -19,7 +19,10 @@ function NavBar ({ onLocationChange, onDateChange, onCandidateChange }) {
             >
               <NavDropdown.Item eventKey="Sydney">Sydney</NavDropdown.Item>
               <NavDropdown.Item eventKey="London">London</NavDropdown.Item>
-              <NavDropdown.Item eventKey="Athens">Athens</NavDropdown.Item>
+              <NavDropdown.Item eventKey="Berlin">Berlin</NavDropdown.Item>
+              <NavDropdown.Item eventKey="Woking">Woking</NavDropdown.Item>
+              <NavDropdown.Item eventKey="Milan">Milan</NavDropdown.Item>
+              <NavDropdown.Item eventKey="Leeds">Leeds</NavDropdown.Item>
               <NavDropdown.Item eventKey="">clear location</NavDropdown.Item>
               <NavDropdown.Divider />
             </NavDropdown>
@@ -49,15 +52,15 @@ function NavBar ({ onLocationChange, onDateChange, onCandidateChange }) {
               <NavDropdown.Divider />
             </NavDropdown>
             <NavDropdown
-            id="nav-dropdown-clear"
-            title="Clear filters"
-            menuVariant="dark">
-                <NavDropdown.Item eventKey="" onClick={() => {
+              id="nav-dropdown-clear"
+              title="Clear filters"
+              menuVariant="dark">
+              <NavDropdown.Item eventKey="" onClick={() => {
                 onLocationChange(null);
                 onDateChange(null);
                 onCandidateChange(null);
             }}>Clear all filters</NavDropdown.Item>
-             <NavDropdown.Divider />
+              <NavDropdown.Divider />
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
