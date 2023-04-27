@@ -49,13 +49,15 @@ if(isLoading) return <p>Loading...</p>
     }
   
     return (
-      <div className="exam_data_container">
+      <div >
+        <div className="exam_data_container">
         <NavBar
           onLocationChange={setLocationFilter}
           onDateChange={setDateFilter}
           onCandidateChange={setCandidateFilter}
         />
-        <div className="exam-list">
+        </div>
+        <div className="content">
           {filteredData.map((data) => {
                 return <ExamCard key={data.id} data={data}/>
             })}
