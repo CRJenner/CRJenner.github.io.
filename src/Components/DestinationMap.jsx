@@ -5,7 +5,7 @@ const DestinationMap = ({ data }) => {
     const zoom = 13;
   return (
     <div className="map-container">
-      <MapContainer
+      {/* <MapContainer
         center={[data.latitude, data.longitude]}
         zoom={zoom}
         scrollWheelZoom={false}
@@ -16,7 +16,7 @@ const DestinationMap = ({ data }) => {
         <Marker position={[data.latitude, data.longitude]}>
           <Popup>{data.name}</Popup>
         </Marker>
-      </MapContainer>
+      </MapContainer> */}
     </div>
   );
 }

@@ -2,6 +2,8 @@ import { GeoAltFill } from "react-bootstrap-icons";
 import Button from "react-bootstrap/Button";
 import Accordion from 'react-bootstrap/Accordion';
 import ScrollToTop from './ScrollToTop';
+
+
 function ExamCard ({data}) {
     const date = new Date(data.date).toLocaleString("en-Uk")
     return (
@@ -20,8 +22,10 @@ function ExamCard ({data}) {
                     </Accordion.Body>
                     <Accordion.Body className="content">
                     <div >
-                    <Button variant= "dark">
+                    
+                    <Button variant= "dark" href="/location" data={data}>
                         <GeoAltFill /> | location </Button>
+                        
                      </div>
                     </Accordion.Body>
                   </Accordion.Item>
