@@ -1,9 +1,11 @@
 import Accordion from 'react-bootstrap/Accordion';
+import ScrollToTop from './ScrollToTop';
 
 function ExamCard ({data}) {
     const date = new Date(data.date).toLocaleString("en-Uk")
     return (
-        <Accordion className="exam_Data_Card" flush>
+        <div>
+        <Accordion className="exam_Data_Card" >
                   <Accordion.Item eventKey="0">
                     <Accordion.Header>{data.title}</Accordion.Header>
                     <Accordion.Body> {data.description} </Accordion.Body>
@@ -11,7 +13,8 @@ function ExamCard ({data}) {
                     <Accordion.Body> On the {date} </Accordion.Body>
                   </Accordion.Item>
         </Accordion>
-   
+        <ScrollToTop/>
+        </div>
     )
     }
     export default ExamCard
