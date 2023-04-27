@@ -8,10 +8,13 @@ function ExamData () {
     const [locationFilter, setLocationFilter] = useState(null);
     const [dateFilter, setDateFilter] = useState(null);
     const [candidateFilter, setCandidateFilter] = useState(null);
+    const [isLoading, setIsLoading] = useState(true)
   
     useEffect(() => {
+        setIsLoading(true)
       api.fetchExamData().then((data) => {
         setExamData(data);
+        setIsLoading(false)
       });
     }, []);
   
@@ -28,6 +31,7 @@ function ExamData () {
       return true;
     });
     
+if(isLoading) return <p>Loading...</p>
 
     if(filteredData.length===0){
         return (<div>
