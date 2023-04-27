@@ -12,29 +12,21 @@
   color: white;
   justify-content: space-between;
   padding-inline: 5vh;
-
+  top: 0;
+  position: sticky;
 }
 
-.nav-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(199, 199, 211);  
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
+
 
 .exam_data_container{
-  padding: 2px 5px;
+  padding: 0;
 }
 
 .exam_Data_Card{
+  margin-top: 5%;
   list-style: none;
   width: 40%;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   margin-left: 20px;
   margin-right: 20px;
   text-align: center;
@@ -43,8 +35,20 @@
   flex-grow: 1;
   width: auto;
   display: block;
+  font-weight: 200;
+}
+a:hover{
+  background-color: grey;
 }
 
 .subheading{
   align-items: left;
+}
+.navbar{
+top: 0;
+  position: sticky;
+}
+.empty_filter{
+  text-align: center;
+  list-style-type: none;
 }
