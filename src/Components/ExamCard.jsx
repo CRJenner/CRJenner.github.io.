@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 import { GeoAltFill } from "react-bootstrap-icons";
 import Button from "react-bootstrap/Button";
 import Accordion from 'react-bootstrap/Accordion';
@@ -5,6 +7,10 @@ import ScrollToTop from './ScrollToTop';
 
 
 function ExamCard ({data}) {
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate("/location", { state: data });
+    }
     const date = new Date(data.date).toLocaleString("en-Uk")
     return (
         <div className ="exam_card_container">
@@ -23,7 +29,7 @@ function ExamCard ({data}) {
                     <Accordion.Body className="content">
                     <div >
                     
-                    <Button variant= "dark" href="/location" data={data}>
+                    <Button variant= "dark" onClick={handleClick} >
                         <GeoAltFill /> | location </Button>
                         
                      </div>
