@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/victvs_fe_project/static/css/main.d0b752d1.css",
+    "main.js": "/victvs_fe_project/static/js/main.fc62b2cd.js",
+    "static/js/787.f42c7b9f.chunk.js": "/victvs_fe_project/static/js/787.f42c7b9f.chunk.js",
+    "index.html": "/victvs_fe_project/index.html",
+    "main.d0b752d1.css.map": "/victvs_fe_project/static/css/main.d0b752d1.css.map",
+    "main.fc62b2cd.js.map": "/victvs_fe_project/static/js/main.fc62b2cd.js.map",
+    "787.f42c7b9f.chunk.js.map": "/victvs_fe_project/static/js/787.f42c7b9f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0b752d1.css",
+    "static/js/main.fc62b2cd.js"
+  ]
+}
