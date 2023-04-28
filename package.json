@@ -17,9 +17,9 @@
     "react-leaflet": "^4.2.1",
     "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4",
-    "homepage": "https://crjenner.github.io/victvs_fe_project/"
+    "web-vitals": "^2.1.4"
   },
+  "homepage": "https://crjenner.github.io/victvs_fe_project/",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
